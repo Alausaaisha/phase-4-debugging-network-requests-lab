@@ -62,12 +62,12 @@ developing your own process.
 
 - Add a new toy when the toy form is submitted
 
-  - How I debugged:
+  - How I debugged: In the toys_controller.rb, I fixed the  nameError under the create method from "toy = TOYS.create" to "toy = TOY.create" .
 
 - Update the number of likes for a toy
 
-  - How I debugged:
+  - How I debugged: I fixed the syntaxError of unexpected end of JSON input by adding "render json: toy, status: :ok" to the update method
 
 - Donate a toy to Goodwill (and delete it from our database)
 
-  - How I debugged:
+  - How I debugged: I fixed the routingError by adding ":destroy" to resources in the routes.rb file
